@@ -34,13 +34,16 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
   holiday_hash.each do |season, holidays|
-    binding.pry
-    holidays.collect do |holiday, supply|
-      holiday_hash = season.to_s, holiday.to_s.capitalize!, supply.to_s
+    holidays.each do |holiday, supply|
       
+      [supply.join()]
+     
+      #holiday_hash = season.to_s, holiday.to_s.capitalize!, [supply.to_s]
+    #   binding.pry
     end
    # binding.pry
   end
+   binding.pry
 end
 
 def all_holidays_with_bbq(holiday_hash)
